@@ -1,16 +1,18 @@
 #backgroundImage {
-    width: 25%;
-    height: 25%;
-    min-width: 500px;
+    width: 20%;
+    height: 20%;
+    min-height: 250px;
+    min-width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .options {
-    width: 10%;
-    height: 10%;
-    min-width: 200px;
+    width: 7.5%;
+    height: 7.5%;
+    min-height: 100px;
+    min-width: 100px;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -18,16 +20,39 @@
 
 body {
     text-align: center;
-
 }
 
 .score {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 footer {
     display: inline-block;
+}
+
+.selectionImage {
+    height: 5%;
+    width: 5%;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.selectionTitle {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.selectionImage {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }

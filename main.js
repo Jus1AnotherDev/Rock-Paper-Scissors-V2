@@ -9,34 +9,52 @@ function playRound(computerSelection, playerSelection) {
     if (playerSelection == "rock") {
     if (computerSelection == "rock") {
         document.getElementById("roundResult").innerHTML = "Round Result: It's a tie.";
+        document.getElementById("playerSelectionImage").src = "css/images/Rock.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Rock.png";
         return 0;
     } else if (computerSelection == "paper") {
         document.getElementById("roundResult").innerHTML = "Round Result: You lost the round. Paper beats rock.";
+        document.getElementById("playerSelectionImage").src = "css/images/Rock.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Paper.png";
         return -1;
     } else {
         document.getElementById("roundResult").innerHTML = "Round Result: You won the round! Rock beats sciccors.";
+        document.getElementById("playerSelectionImage").src = "css/images/Rock.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Scissors.png";
         return 1;
     }
     } else if (playerSelection == "paper") {
     if (computerSelection == "rock") {
         document.getElementById("roundResult").innerHTML = "Round Result: You won the round! Paper beats rock.";
+        document.getElementById("playerSelectionImage").src = "css/images/Paper.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Rock.png";
         return 1;
     } else if (computerSelection == "paper") {
         document.getElementById("roundResult").innerHTML = "Round Result: It's a tie.";
+        document.getElementById("playerSelectionImage").src = "css/images/Paper.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Paper.png";
         return 0;
     } else {
         document.getElementById("roundResult").innerHTML = "Round Result: You lost the round. Scissors beats paper.";
+        document.getElementById("playerSelectionImage").src = "css/images/Paper.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Scissors.png";
         return -1;
     }
     } else if (playerSelection == "scissors") {
     if (computerSelection == "rock") {
         document.getElementById("roundResult").innerHTML = "Round Result: You lost the round. Rock beats scissors.";
+        document.getElementById("playerSelectionImage").src = "css/images/Scissors.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Scissors.png";
         return -1;
     } else if (computerSelection == "paper") {
         document.getElementById("roundResult").innerHTML = "Round Result: You won the round! Scissors beats paper.";
+        document.getElementById("playerSelectionImage").src = "css/images/Scissors.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Paper.png";
         return 1;
     } else{
         document.getElementById("roundResult").innerHTML = "Round Result: It's a tie.";
+        document.getElementById("playerSelectionImage").src = "css/images/Scissors.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Scissors.png";
         return 0;
     }
     }
@@ -65,19 +83,23 @@ function game(playerSelection) {
     document.getElementById("computerScore").innerHTML = computerScore;
 
     if (playerScore == 5) {
-    alert("You won!");
-    playerScore = 0;
-    computerScore = 0;
-    document.getElementById("playerScore").innerHTML = playerScore;
-    document.getElementById("computerScore").innerHTML = computerScore;
-    document.getElementById("roundResult").innerHTML = "Round Result: ";
+        alert("You won!");
+        playerScore = 0;
+        computerScore = 0;
+        document.getElementById("playerScore").innerHTML = playerScore;
+        document.getElementById("computerScore").innerHTML = computerScore;
+        document.getElementById("roundResult").innerHTML = "Round Result: ";
+        document.getElementById("playerSelectionImage").src = "css/images/Rock Paper Scissors.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Rock Paper Scissors.png";
     } else if (computerScore == 5) {
-    alert("The computer won.");
-    playerScore = 0;
-    computerScore = 0;
-    document.getElementById("playerScore").innerHTML = playerScore;
-    document.getElementById("computerScore").innerHTML = computerScore;
-    document.getElementById("roundResult").innerHTML = "Round Result: ";
+        alert("The computer won.");
+        playerScore = 0;
+        computerScore = 0;
+        document.getElementById("playerScore").innerHTML = playerScore;
+        document.getElementById("computerScore").innerHTML = computerScore;
+        document.getElementById("roundResult").innerHTML = "Round Result: ";
+        document.getElementById("playerSelectionImage").src = "css/images/Rock Paper Scissors.png";
+        document.getElementById("computerSelectionImage").src = "css/images/Rock Paper Scissors.png";
     }
 
     return;
